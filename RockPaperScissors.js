@@ -20,27 +20,33 @@ function getComputerChoice(){
 }
 
 function getHumanChoice(){
-    let humanChoice = Number(prompt("Pick option 0, 1 or 2"));
+    let humanChoice = prompt("Rock, Paper, or Scissors?");
     let numValue;
 
-    if(humanChoice === "R"){
+    if(humanChoice === "Rock"){
+        numValue = 0;
         console.log("You have choosen rock");
     }
-    else if(humanChoice === 1){
+    else if(humanChoice === "Paper"){
+        numValue = 1;
         console.log("You have choosen paper");
 
     }
-    else if(humanChoice === 2){
+    else if(humanChoice === "Scissors"){
+        numValue = 2;
         console.log("You have choosen scissors");
     }
-    
+    else{
+        console.log("Please input valid choice!");
+    }
 }
 
 function playRound(humanChoice, computerChoice){
-
+    if(humanChoice )
 
 }
 
-getHumanChoice();
+const humanSelection = getHumanChoice();
+const computerSelection = getComputerChoice();
 
-getComputerChoice();
+playRound(humanSelection, computerSelection);
