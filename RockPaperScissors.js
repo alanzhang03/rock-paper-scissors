@@ -8,31 +8,31 @@ function getComputerChoice(){
     let compChoice = Number(Math.floor(Math.random() * 3));
     console.log(compChoice);
         if(compChoice ===  0){
-            console.log("rock");
+            console.log("Computer picked rock");
         }
         else if(compChoice === 1){
-            console.log("paper");
+            console.log("Computer picked paper");
         }
         else{
-            console.log("scissors");
+            console.log("Computer picked scissors");
         }
 
 }
 
 function getHumanChoice(){
-    let humanChoice = prompt("Rock, Paper, or Scissors?");
+    let humChoice = prompt("Rock, Paper, or Scissors?");
     let numValue;
 
-    if(humanChoice === "Rock"){
+    if(humChoice === "Rock"){
         numValue = 0;
         console.log("You have choosen rock");
     }
-    else if(humanChoice === "Paper"){
+    else if(humChoice === "Paper"){
         numValue = 1;
         console.log("You have choosen paper");
 
     }
-    else if(humanChoice === "Scissors"){
+    else if(humChoice === "Scissors"){
         numValue = 2;
         console.log("You have choosen scissors");
     }
@@ -42,11 +42,38 @@ function getHumanChoice(){
 }
 
 function playRound(humanChoice, computerChoice){
-    if(humanChoice )
-
+    humanChoice = getHumanChoice();
+    computerChoice = getComputerChoice();
+    if(humanChoice === 0 || computerChoice === 0){
+        console.log("Tie! Play again!");
+    }
+    else if(humanChoice === 0 || computerChoice === 1){
+        console.log("You Lose, computer wins!");
+    }
+    else if(humanChoice === 0 || computerChoice === 2){
+        console.log("You win! Computer loses!");
+    }
+    else if(humanChoice === 1 || computerChoice === 1){
+        console.log("Tie! Play again!");
+    }
+    else if(humanChoice === 1 || computerChoice === 0){
+        console.log("You win! Computer loses!");
+    }
+    else if(humanChoice === 1 || computerChoice === 2){
+        console.log("You Lose, computer wins!");
+    }
+    else if(humanChoice === 2 || computerChoice === 2){
+        console.log("Tie! Play again!");
+    }
+    else if(humanChoice === 2 || computerChoice === 0){
+        console.log("You lose, computer wins!");
+    }
+    else if(humanChoice === 2 || computerChoice === 1){
+        console.log("You win! Computer loses");
+    }
+    else{
+        console.log("Error, something went wrong");
+    }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
-
-playRound(humanSelection, computerSelection);
+playRound(1, 1);
