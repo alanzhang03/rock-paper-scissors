@@ -44,31 +44,31 @@ function getHumanChoice(){
 function playRound(humanChoice, computerChoice){
     humanChoice = getHumanChoice();
     computerChoice = getComputerChoice();
-    if(humanChoice === 0 || computerChoice === 0){
+    if(humanChoice === 0 && computerChoice === 0){
         console.log("Tie! Play again!");
     }
-    else if(humanChoice === 0 || computerChoice === 1){
+    else if(humanChoice === 0 && computerChoice === 1){
         console.log("You Lose, computer wins!");
     }
-    else if(humanChoice === 0 || computerChoice === 2){
+    else if(humanChoice === 0 && computerChoice === 2){
         console.log("You win! Computer loses!");
     }
-    else if(humanChoice === 1 || computerChoice === 1){
+    else if(humanChoice === 1 && computerChoice === 1){
         console.log("Tie! Play again!");
     }
-    else if(humanChoice === 1 || computerChoice === 0){
+    else if(humanChoice === 1 && computerChoice === 0){
         console.log("You win! Computer loses!");
     }
-    else if(humanChoice === 1 || computerChoice === 2){
+    else if(humanChoice === 1 && computerChoice === 2){
         console.log("You Lose, computer wins!");
     }
-    else if(humanChoice === 2 || computerChoice === 2){
+    else if(humanChoice === 2 && computerChoice === 2){
         console.log("Tie! Play again!");
     }
-    else if(humanChoice === 2 || computerChoice === 0){
+    else if(humanChoice === 2 && computerChoice === 0){
         console.log("You lose, computer wins!");
     }
-    else if(humanChoice === 2 || computerChoice === 1){
+    else if(humanChoice === 2 && computerChoice === 1){
         console.log("You win! Computer loses");
     }
     else{
