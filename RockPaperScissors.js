@@ -88,10 +88,30 @@ function playRound(humanChoice, computerChoice){
 Compuer Score:${computerScore}`);
 }
 
-function playGame(){
-    for(let i = 0; i < 5; i++){
-        i * playRound();
-    }
-}
 
-playGame();
+const playGameBtn = document.querySelector("#playGameBtn");
+playGameBtn.style.backgroundColor = "green";
+playGameBtn.addEventListener("click", playRound());
+
+
+
+const choiceBtns = document.getElementById("choiceBtns")
+const rockbtn = document.createElement("button");
+const paperbtn = document.createElement("button");
+const scissorsbtn = document.createElement("button");
+
+rockbtn.textContent = "Rock";
+paperbtn.textContent = "Paper";
+scissorsbtn.textContent = "Scissors";
+
+rockbtn.style.backgroundColor="red";
+paperbtn.style.backgroundColor="red";
+scissorsbtn.style.backgroundColor="red";
+
+
+
+choiceBtns.appendChild(rockbtn);
+choiceBtns.appendChild(paperbtn);
+choiceBtns.appendChild(scissorsbtn);
+
+
