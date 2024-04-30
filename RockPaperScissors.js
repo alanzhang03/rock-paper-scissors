@@ -25,18 +25,18 @@ function getHumanChoice(){
 
     if(humChoice.toLowerCase() === "rock"){
         numValue = 0;
-        console.log("You have choosen rock");
+        console.log("||You have choosen rock");
         return numValue;
     }
     else if(humChoice.toLowerCase() === "paper"){
         numValue = 1;
-        console.log("You have choosen paper");
+        console.log("||You have choosen paper");
         return numValue;
 
     }
     else if(humChoice.toLowerCase() === "scissors"){
         numValue = 2;
-        console.log("You have choosen scissors");
+        console.log("||You have choosen scissors");
         return numValue;
     }
     else{
