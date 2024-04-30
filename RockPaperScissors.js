@@ -25,7 +25,7 @@ function getHumanChoice(){
 
     if(humChoice.toLowerCase() === "rock"){
         numValue = 0;
-        console.log("||You have choosen rock");
+        console.log("||You have choosen rock, I am testing out my git branch!");
         return numValue;
     }
     else if(humChoice.toLowerCase() === "paper"){
